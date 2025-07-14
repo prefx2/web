@@ -28,7 +28,7 @@ st.markdown(
         font-size: 16px !important;
     }
     section[data-testid="stSelectbox"] > label {
-        color: #1f2a40 !important;
+        color: #f0f4f8 !important;
         font-weight: 600;
         font-size: 15px !important;
         margin-bottom: 4px !important;
