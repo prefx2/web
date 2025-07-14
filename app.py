@@ -70,6 +70,22 @@ st.markdown(
         font-weight: 600;
         color: #1f2a40 !important;
     }
+    div[data-baseweb="popover"] {
+    background-color: #ffffff !important;
+    border: 1px solid #7daae8 !important;
+    border-radius: 8px !important;
+    color: #1f2a40 !important;
+}
+
+/* Item teks dalam dropdown */
+div[data-baseweb="popover"] div {
+    color: #1f2a40 !important;
+    background-color: #ffffff !important;
+}
+div[data-baseweb="popover"] div:hover {
+    background-color: #e0efff !important;
+    cursor: pointer;
+}
     </style>
     """,
     unsafe_allow_html=True
