@@ -34,7 +34,7 @@ st.markdown(
         margin-bottom: 4px !important;
     }
     div[data-baseweb="select"] {
-        background-color: #ffffff !important;
+        background-color: #ccdae8 !important;
         border: 1px solid #7daae8 !important;
         border-radius: 8px !important;
         padding: 2px !important;
@@ -134,38 +134,6 @@ if selected_basemap == 'ZOM':
         st.warning(f"Gagal memuat layer ZOM: {e}")
 else:
     st.info("📌 Basemap: Provinsi")
-
-# ========== Marker
-if not df_filtered.empty and {'latt_station', 'long_station', 'name_station'}.issubset(df_filtered.columns):
-    marker_cluster = MarkerCluster().add_to(m)
-    for _, row in df_filtered.iterrows():
-        try:
-            lat = float(row['latt_station'])
-            lon = float(row['long_station'])
-            popup = f"""
-                <b>{row['name_station']}</b><br>
-                <table style="font-size: 12px;">
-                  <tr><td><b>Provinsi</b></td><td>: {row.get('nama_propinsi', '')}</td></tr>
-                  <tr><td><b>Kota</b></td><td>: {row.get('nama_kota', '')}</td></tr>
-                  <tr><td><b>Kecamatan</b></td><td>: {row.get('kecamatan', '')}</td></tr>
-                  <tr><td><b>Kelurahan</b></td><td>: {row.get('kelurahan', '')}</td></tr>
-                  <tr><td><b>Latitude</b></td><td>: {lat}</td></tr>
-                  <tr><td><b>Longitude</b></td><td>: {lon}</td></tr>
-                </table>
-            """
-            folium.Marker(
-                location=[lat, lon],
-                popup=folium.Popup(popup, max_width=300),
-                icon=folium.Icon(color='red', icon='info-sign', icon_color='#f55442')
-            ).add_to(marker_cluster)
-        except:
-            continue
-else:
-    st.info("📌 Tidak ada data untuk ditampilkan.")
-
-folium.LayerControl().add_to(m)
-st_folium(m, width=1200, height=700)
-
 
 # ========== Marker
 if not df_filtered.empty and {'latt_station', 'long_station', 'name_station'}.issubset(df_filtered.columns):
