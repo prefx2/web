@@ -79,7 +79,7 @@ st.markdown(
 
 /* Item teks dalam dropdown */
 div[data-baseweb="popover"] div {
-    color: #1f2a40 !important
+    color: #f0f4f8 !important
 }
     </style>
     """,
