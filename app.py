@@ -19,12 +19,12 @@ st.markdown(
         background-color: #f0f4f8 !important;
         color: #1f2a40 !important;
     }
-    .stApp { background-color: #f0f4f8; }
+    .stApp { background-color: #f0f4f8; } 
     h1, h2, h3, h4, h5, h6 {
         color: #1f2a40 !important;
     }
     p, span, div, label {
-        color: #f0f4f8 !important;
+        color: #1f2a40 !important;
         font-size: 16px !important;
     }
     section[data-testid="stSelectbox"] > label {
@@ -44,7 +44,7 @@ st.markdown(
         font-size: 15px !important;
     }
     div[data-baseweb="select"] svg {
-        fill: #f0f4f8 !important;
+        fill: #1f2a40 !important;
     }
     .stDownloadButton > button {
         background-color: #2c82c9;
@@ -68,7 +68,7 @@ st.markdown(
     }
     h2, h3 {
         font-weight: 600;
-        color: #1f2a40 !important;
+        color: #f0f4f8 !important;
     }
     </style>
     """,
