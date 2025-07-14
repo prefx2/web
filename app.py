@@ -40,11 +40,11 @@ st.markdown(
         padding: 2px !important;
     }
     div[data-baseweb="select"] * {
-        color: #1f2a40 !important;
+        color: #f0f4f8 !important;
         font-size: 15px !important;
     }
     div[data-baseweb="select"] svg {
-        fill: #1f2a40 !important;
+        fill: #f0f4f8 !important;
     }
     .stDownloadButton > button {
         background-color: #2c82c9;
