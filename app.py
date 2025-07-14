@@ -71,10 +71,10 @@ st.markdown(
         color: #1f2a40 !important;
     }
     div[data-baseweb="popover"] {
-    background-color: #1f2a40 !important;
+    background-color: #f0f4f8 !important;
     border: 1px solid #7daae8 !important;
     border-radius: 8px !important;
-    color: #f0f4f8 !important;
+    color: #1f2a40 !important;
 }
 
 /* Item teks dalam dropdown */
