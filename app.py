@@ -74,7 +74,7 @@ st.markdown(
     background-color: #f0f4f8 !important;
     border: 1px solid #7daae8 !important;
     border-radius: 8px !important;
-    color: #1f2a40 !important;
+    color: #f0f4f8 !important;
 }
 
 /* Item teks dalam dropdown */
