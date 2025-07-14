@@ -64,11 +64,11 @@ st.markdown(
         background-color: #e9f0f5 !important;
         border: 1px solid #d0dae5;
         border-radius: 10px;
-        color: #1f2a40 !important;
+        color: #f0f4f8 !important;
     }
     h2, h3 {
         font-weight: 600;
-        color: #f0f4f8 !important;
+        color: #1f2a40 !important;
     }
     </style>
     """,
