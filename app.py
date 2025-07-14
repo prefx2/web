@@ -21,10 +21,10 @@ st.markdown(
     }
     .stApp { background-color: #f0f4f8; }
     h1, h2, h3, h4, h5, h6 {
-        color: #f0f4f8 !important;
+        color: #1f2a40 !important;
     }
     p, span, div, label {
-        color: #1f2a40 !important;
+        color: #f0f4f8 !important;
         font-size: 16px !important;
     }
     section[data-testid="stSelectbox"] > label {
